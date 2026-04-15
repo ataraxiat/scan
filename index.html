@@ -194,12 +194,11 @@
   <h1>Scan Document</h1>
   <p>Tap below to open the document scanner.<br/>The scanned PDF will be sent back to your shortcut automatically.</p>
 
-  <!-- The magic: capture=environment + accept=application/pdf triggers iOS doc scanner -->
+  <!-- accept=application/pdf triggers iOS doc scanner -->
   <input
     type="file"
     id="fileInput"
     accept="application/pdf,image/*"
-    capture="environment"
   />
 
   <button class="scan-btn" onclick="document.getElementById('fileInput').click()">
